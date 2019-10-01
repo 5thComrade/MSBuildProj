@@ -1,0 +1,9 @@
+D:\Projects\Outsource\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Projects\Outsource\DAL\bin\Debug\DAL.dll
+D:\Projects\Outsource\DAL\bin\Debug\DAL.pdb
+D:\Projects\Outsource\DAL\bin\Debug\DAO.dll
+D:\Projects\Outsource\DAL\bin\Debug\Entity.dll
+D:\Projects\Outsource\DAL\bin\Debug\DAO.pdb
+D:\Projects\Outsource\DAL\bin\Debug\Entity.pdb
+D:\Projects\Outsource\DAL\obj\Debug\DAL.dll
+D:\Projects\Outsource\DAL\obj\Debug\DAL.pdb

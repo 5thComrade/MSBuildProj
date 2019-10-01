@@ -1,0 +1,7 @@
+D:\Projects\Outsource\FileServices\bin\Debug\FileServices.dll
+D:\Projects\Outsource\FileServices\bin\Debug\FileServices.pdb
+D:\Projects\Outsource\FileServices\bin\Debug\DAO.dll
+D:\Projects\Outsource\FileServices\bin\Debug\DAO.pdb
+D:\Projects\Outsource\FileServices\obj\Debug\FileServices.csprojResolveAssemblyReference.cache
+D:\Projects\Outsource\FileServices\obj\Debug\FileServices.dll
+D:\Projects\Outsource\FileServices\obj\Debug\FileServices.pdb

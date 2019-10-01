@@ -1,0 +1,4 @@
+D:\Projects\Outsource\Reporting\bin\Debug\Reporting.dll
+D:\Projects\Outsource\Reporting\bin\Debug\Reporting.pdb
+D:\Projects\Outsource\Reporting\obj\Debug\Reporting.dll
+D:\Projects\Outsource\Reporting\obj\Debug\Reporting.pdb

@@ -1,0 +1,4 @@
+D:\Projects\Outsource\Context\bin\Release\Context.dll
+D:\Projects\Outsource\Context\bin\Release\Context.pdb
+D:\Projects\Outsource\Context\obj\Release\Context.dll
+D:\Projects\Outsource\Context\obj\Release\Context.pdb

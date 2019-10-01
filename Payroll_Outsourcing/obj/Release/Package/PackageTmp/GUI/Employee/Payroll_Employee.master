@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Payroll_Landing_Page.Master" AutoEventWireup="true" CodeBehind="Payroll_Employee.master.cs" Inherits="Payroll_Outsourcing.GUI.Employee.Payroll_Employee" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  
+      <div class="row">
+      <div class="col-md-12 no-padding">
+    <!-- Main Navigation Container / Start -->
+	<div class="main-navigation-container">
+    	<!-- Main Navigation / Start -->        
+        <nav class="main-navigation">
+            <ul class="parentNav">
+            	<!-- Link / Start -->
+                <li class="active-nav-link"><a href="/GUI/Employee/Payroll_Employee_Dashboard.aspx">Home</a>
+                	<!-- Submenu / Start -->
+                <%--    <div class="submenu">
+                        <ul class="childNav">
+                            <li class="active-nav-link"><a href="#">Latest News</a></li>
+                            <li><a href="#">Most Popular</a></li>
+                            <li><a href="#">Europe</a></li>
+                            <li><a href="#">USA</a></li>
+                            <li><a href="#">Asia</a></li>
+                        </ul>
+                    </div>--%>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Employee</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="/GUI/Employee/Payroll_Employee_Details.aspx">Employee Details</a></li>
+                            <%--<li><a href="#">USA news</a></li>
+                            <li><a href="#">Science news</a></li>
+                            <li><a href="#">Sport news</a></li>
+                            <li><a href="#">Culture news</a></li>
+                            <li><a href="#">Health news</a></li>--%>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+          <%--      <li><a href="#">Economics</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">World economy</a></li>
+                            <li><a href="#">Europe economy</a></li>
+                            <li><a href="#">USA economy</a></li>
+                            <li><a href="#">Stock Market</a></li>
+                            <li><a href="#">Exchange Rates</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Local</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Weather</a></li>
+                            <li><a href="/GUI/Employee/Test1.aspx">Sports</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Cinemas</a></li>
+                            <li><a href="#">Travel</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Sport</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Scores</a></li>
+                            <li><a href="#">Football</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="/GUI/Employee/Test2.aspx">Volleyball</a></li>
+                            <li><a href="#">Handball</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Rugby</a></li>
+                            <li><a href="#">Baseball</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Culture</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Theaters</a></li>
+                            <li><a href="#">Museums</a></li>
+                            <li><a href="#">Cinemas</a></li>
+                            <li><a href="#">Concerts</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+               	<li><a href="#">Travels</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Amsterdam</a></li>
+                            <li><a href="#">Bahamas</a></li>
+                            <li><a href="#">Jamaica</a></li>
+                            <li><a href="#">Las Vegas</a></li>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Los Angeles</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Montreal</a></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">Rome</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Living</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Style</a></li>
+                            <li><a href="#">Decor</a></li>
+                            <li><a href="#">Relationship</a></li>
+                            <li><a href="#">Family</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Recreation</a></li>
+                            <li><a href="#">Fitness</a></li>
+                            <li><a href="#">Horoscope</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Money</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Business News</a></li>
+                            <li><a href="#">Money now</a></li>
+                            <li><a href="#">Investing</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">Technology</a>
+                	<!-- Submenu / Start -->
+                    <div class="submenu">
+                        <ul class="childNav">
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Robots</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Planes</a></li>
+                            <li><a href="#">Science Fiction</a></li>
+                        </ul>
+                    </div>
+                    <!-- Submenu / End -->
+                </li>
+                <!-- Link / End -->
+                <!-- Link / Start -->
+                <li><a href="#">More</a>
+                	<!-- Submenu / Start -->
+                	<div class="submenu"></div>
+                    <!-- Submenu / End -->
+                </li>--%>
+                <!-- Link / End -->
+            </ul>
+    	</nav>
+            </div>
+        <!-- Main Navigation / End -->
+	
+    <!-- Main Navigation Container / End -->
+                                    </div>
+         </div>
+    <asp:ContentPlaceHolder ID="ChildContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content> 

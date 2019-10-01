@@ -1,0 +1,7 @@
+D:\Projects\Outsource\Security\obj\Debug\Security.csprojResolveAssemblyReference.cache
+D:\Projects\Outsource\Security\bin\Debug\Security.dll
+D:\Projects\Outsource\Security\bin\Debug\Security.pdb
+D:\Projects\Outsource\Security\bin\Debug\DAO.dll
+D:\Projects\Outsource\Security\bin\Debug\DAO.pdb
+D:\Projects\Outsource\Security\obj\Debug\Security.dll
+D:\Projects\Outsource\Security\obj\Debug\Security.pdb

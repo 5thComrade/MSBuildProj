@@ -1,0 +1,5 @@
+D:\Projects\Outsource\Utilities\bin\Debug\Utilities.dll
+D:\Projects\Outsource\Utilities\bin\Debug\Utilities.pdb
+D:\Projects\Outsource\Utilities\obj\Debug\Utilities.dll
+D:\Projects\Outsource\Utilities\obj\Debug\Utilities.pdb
+D:\Projects\Outsource\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache

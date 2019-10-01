@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19B6C6E6-259E-4722-AA09-9E42390B9650}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Payroll_Outsourcing</RootNamespace>
+    <AssemblyName>Payroll_Outsourcing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\BAL.dll" />
+    <Content Include="bin\BAL.pdb" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\DAO.dll" />
+    <Content Include="bin\DAO.pdb" />
+    <Content Include="bin\Entity.dll" />
+    <Content Include="bin\Entity.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Payroll_Outsourcing.dll" />
+    <Content Include="bin\Payroll_Outsourcing.pdb" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\cleditor.css" />
+    <Content Include="css\DateTimePicker.css" />
+    <Content Include="css\dtree.css" />
+    <Content Include="css\elfinder.css" />
+    <Content Include="css\elfinder.min.css" />
+    <Content Include="css\fancybox\blank.gif" />
+    <Content Include="css\fancybox\fancybox_loading.gif" />
+    <Content Include="css\fancybox\fancybox_overlay.png" />
+    <Content Include="css\fancybox\fancybox_sprite.png" />
+    <Content Include="css\fancybox\jquery.fancybox.css" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\fullcalendar.css" />
+    <Content Include="css\fullcalendar.print.css" />
+    <Content Include="css\ibutton.css" />
+    <Content Include="css\icomoon\icomoon.svg" />
+    <Content Include="css\icons.css" />
+    <Content Include="css\ie7.css" />
+    <Content Include="css\jquery.datetimepicker.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\login_style.css" />
+    <Content Include="css\mCustomScrollbar.css" />
+    <Content Include="css\multi-select.css" />
+    <Content Include="css\pnotify.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\stepy.css" />
+    <Content Include="css\stylesheet.css" />
+    <Content Include="css\stylesheets.css" />
+    <Content Include="css\styling.css" />
+    <Content Include="css\tagsinput.css" />
+    <Content Include="css\ui.css" />
+    <Content Include="css\uniform.default.css" />
+    <Content Include="css\validation.css" />
+    <Content Include="css\w2ui-1.4.2.min.css" />
+    <Content Include="GUI\Config\Payroll_Client_Configuration.aspx" />
+    <Content Include="GUI\Config\Payroll_Components_Group_Mapping.aspx" />
+    <Content Include="GUI\Config\Payroll_Configuration_Dashboard.aspx" />
+    <Content Include="GUI\Config\Payroll_Salary_Components_Master.aspx" />
+    <Content Include="GUI\Config\Payroll_User_Access_Security.aspx" />
+    <Content Include="GUI\Dashboard\Payroll_Home.aspx" />
+    <Content Include="GUI\Employee\Payroll_Employee_Dashboard.aspx" />
+    <Content Include="GUI\Employee\Payroll_Employee_Details.aspx" />
+    <Content Include="GUI\WebServices\Payroll_Webservices.asmx" />
+    <Content Include="img\balloons.png" />
+    <Content Include="img\banner1.jpg" />
+    <Content Include="img\hierarchy.png" />
+    <Content Include="img\Icon_User.png" />
+    <Content Include="img\loading_blue2.gif" />
+    <Content Include="img\login.jpg" />
+    <Content Include="img\misc.png" />
+    <Content Include="img\org.png" />
+    <Content Include="img\p.png" />
+    <Content Include="img\pushpin11.png" />
+    <Content Include="img\teamlease_logo.png" />
+    <Content Include="img\arrow_down.png" />
+    <Content Include="img\arrow_up.png" />
+    <Content Include="img\backgrounds\body.jpg" />
+    <Content Include="img\backgrounds\body_bcrosshatch.jpg" />
+    <Content Include="img\backgrounds\body_crosshatch.jpg" />
+    <Content Include="img\backgrounds\body_cube.jpg" />
+    <Content Include="img\backgrounds\body_dots.jpg" />
+    <Content Include="img\backgrounds\body_grid.jpg" />
+    <Content Include="img\backgrounds\body_hLine.jpg" />
+    <Content Include="img\backgrounds\body_vLine.jpg" />
+    <Content Include="img\backgrounds\divider.png" />
+    <Content Include="img\backgrounds\divider_span.png" />
+    <Content Include="img\backgrounds\menu.jpg" />
+    <Content Include="img\backgrounds\nav.jpg" />
+    <Content Include="img\b_logo.png" />
+    <Content Include="img\checkbox\bg-input-focus.png" />
+    <Content Include="img\checkbox\bg-input.png" />
+    <Content Include="img\checkbox\sprite.png" />
+    <Content Include="img\cleditor\buttons.gif" />
+    <Content Include="img\cleditor\toolbar.gif" />
+    <Content Include="img\datatable\sort_asc.png" />
+    <Content Include="img\datatable\sort_asc_disabled.png" />
+    <Content Include="img\datatable\sort_both.png" />
+    <Content Include="img\datatable\sort_desc.png" />
+    <Content Include="img\datatable\sort_desc_disabled.png" />
+    <Content Include="img\elfinder\arrows-active.png" />
+    <Content Include="img\elfinder\arrows-normal.png" />
+    <Content Include="img\elfinder\crop.gif" />
+    <Content Include="img\elfinder\dialogs.png" />
+    <Content Include="img\elfinder\icons-big.png" />
+    <Content Include="img\elfinder\icons-small.png" />
+    <Content Include="img\elfinder\progress.gif" />
+    <Content Include="img\elfinder\quicklook-bg.png" />
+    <Content Include="img\elfinder\quicklook-icons.png" />
+    <Content Include="img\elfinder\resize.png" />
+    <Content Include="img\elfinder\spinner-mini.gif" />
+    <Content Include="img\elfinder\toolbar.png" />
+    <Content Include="img\example.jpg" />
+    <Content Include="img\example_full.jpg" />
+    <Content Include="img\example_mini.jpg" />
+    <Content Include="img\example_xmini.jpg" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\google.png" />
+    <Content Include="img\ibutton\ibutton-slider-default.png" />
+    <Content Include="img\icons\bb\ic_archive.png" />
+    <Content Include="img\icons\bb\ic_attachment.png" />
+    <Content Include="img\icons\bb\ic_bookmark.png" />
+    <Content Include="img\icons\bb\ic_brush.png" />
+    <Content Include="img\icons\bb\ic_calc.png" />
+    <Content Include="img\icons\bb\ic_calendar.png" />
+    <Content Include="img\icons\bb\ic_cancel.png" />
+    <Content Include="img\icons\bb\ic_chat.png" />
+    <Content Include="img\icons\bb\ic_chats.png" />
+    <Content Include="img\icons\bb\ic_cloud.png" />
+    <Content Include="img\icons\bb\ic_delete.png" />
+    <Content Include="img\icons\bb\ic_documents.png" />
+    <Content Include="img\icons\bb\ic_down.png" />
+    <Content Include="img\icons\bb\ic_download.png" />
+    <Content Include="img\icons\bb\ic_down_circle.png" />
+    <Content Include="img\icons\bb\ic_edit.png" />
+    <Content Include="img\icons\bb\ic_empty_document.png" />
+    <Content Include="img\icons\bb\ic_favorite.png" />
+    <Content Include="img\icons\bb\ic_folder.png" />
+    <Content Include="img\icons\bb\ic_fullscreen.png" />
+    <Content Include="img\icons\bb\ic_graph.png" />
+    <Content Include="img\icons\bb\ic_grid.png" />
+    <Content Include="img\icons\bb\ic_left.png" />
+    <Content Include="img\icons\bb\ic_left_circle.png" />
+    <Content Include="img\icons\bb\ic_list.png" />
+    <Content Include="img\icons\bb\ic_lock.png" />
+    <Content Include="img\icons\bb\ic_mail.png" />
+    <Content Include="img\icons\bb\ic_minus.png" />
+    <Content Include="img\icons\bb\ic_ok.png" />
+    <Content Include="img\icons\bb\ic_picture.png" />
+    <Content Include="img\icons\bb\ic_pin.png" />
+    <Content Include="img\icons\bb\ic_plus.png" />
+    <Content Include="img\icons\bb\ic_power.png" />
+    <Content Include="img\icons\bb\ic_print.png" />
+    <Content Include="img\icons\bb\ic_refresh.png" />
+    <Content Include="img\icons\bb\ic_right.png" />
+    <Content Include="img\icons\bb\ic_right_circle.png" />
+    <Content Include="img\icons\bb\ic_settings.png" />
+    <Content Include="img\icons\bb\ic_sound.png" />
+    <Content Include="img\icons\bb\ic_sync.png" />
+    <Content Include="img\icons\bb\ic_tag.png" />
+    <Content Include="img\icons\bb\ic_target.png" />
+    <Content Include="img\icons\bb\ic_text_document.png" />
+    <Content Include="img\icons\bb\ic_time.png" />
+    <Content Include="img\icons\bb\ic_unlock.png" />
+    <Content Include="img\icons\bb\ic_up.png" />
+    <Content Include="img\icons\bb\ic_up_circle.png" />
+    <Content Include="img\icons\bb\ic_user.png" />
+    <Content Include="img\icons\bb\ic_users.png" />
+    <Content Include="img\icons\bb\ic_zoom.png" />
+    <Content Include="img\icons\bs\ic_archive.png" />
+    <Content Include="img\icons\bs\ic_attachment.png" />
+    <Content Include="img\icons\bs\ic_bookmark.png" />
+    <Content Include="img\icons\bs\ic_brush.png" />
+    <Content Include="img\icons\bs\ic_calc.png" />
+    <Content Include="img\icons\bs\ic_calendar.png" />
+    <Content Include="img\icons\bs\ic_cancel.png" />
+    <Content Include="img\icons\bs\ic_chat.png" />
+    <Content Include="img\icons\bs\ic_chats.png" />
+    <Content Include="img\icons\bs\ic_cloud.png" />
+    <Content Include="img\icons\bs\ic_delete.png" />
+    <Content Include="img\icons\bs\ic_documents.png" />
+    <Content Include="img\icons\bs\ic_down.png" />
+    <Content Include="img\icons\bs\ic_download.png" />
+    <Content Include="img\icons\bs\ic_down_circle.png" />
+    <Content Include="img\icons\bs\ic_edit.png" />
+    <Content Include="img\icons\bs\ic_empty_document.png" />
+    <Content Include="img\icons\bs\ic_favorite.png" />
+    <Content Include="img\icons\bs\ic_folder.png" />
+    <Content Include="img\icons\bs\ic_fullscreen.png" />
+    <Content Include="img\icons\bs\ic_graph.png" />
+    <Content Include="img\icons\bs\ic_grid.png" />
+    <Content Include="img\icons\bs\ic_left.png" />
+    <Content Include="img\icons\bs\ic_left_circle.png" />
+    <Content Include="img\icons\bs\ic_list.png" />
+    <Content Include="img\icons\bs\ic_lock.png" />
+    <Content Include="img\icons\bs\ic_mail.png" />
+    <Content Include="img\icons\bs\ic_minus.png" />
+    <Content Include="img\icons\bs\ic_ok.png" />
+    <Content Include="img\icons\bs\ic_picture.png" />
+    <Content Include="img\icons\bs\ic_pin.png" />
+    <Content Include="img\icons\bs\ic_plus.png" />
+    <Content Include="img\icons\bs\ic_power.png" />
+    <Content Include="img\icons\bs\ic_print.png" />
+    <Content Include="img\icons\bs\ic_refresh.png" />
+    <Content Include="img\icons\bs\ic_right.png" />
+    <Content Include="img\icons\bs\ic_right_circle.png" />
+    <Content Include="img\icons\bs\ic_settings.png" />
+    <Content Include="img\icons\bs\ic_sound.png" />
+    <Content Include="img\icons\bs\ic_sync.png" />
+    <Content Include="img\icons\bs\ic_tag.png" />
+    <Content Include="img\icons\bs\ic_target.png" />
+    <Content Include="img\icons\bs\ic_text_document.png" />
+    <Content Include="img\icons\bs\ic_time.png" />
+    <Content Include="img\icons\bs\ic_unlock.png" />
+    <Content Include="img\icons\bs\ic_up.png" />
+    <Content Include="img\icons\bs\ic_up_circle.png" />
+    <Content Include="img\icons\bs\ic_user.png" />
+    <Content Include="img\icons\bs\ic_users.png" />
+    <Content Include="img\icons\bs\ic_zoom.png" />
+    <Content Include="img\icons\wb\ic_archive.png" />
+    <Content Include="img\icons\wb\ic_attachment.png" />
+    <Content Include="img\icons\wb\ic_bookmark.png" />
+    <Content Include="img\icons\wb\ic_brush.png" />
+    <Content Include="img\icons\wb\ic_calc.png" />
+    <Content Include="img\icons\wb\ic_calendar.png" />
+    <Content Include="img\icons\wb\ic_cancel.png" />
+    <Content Include="img\icons\wb\ic_chat.png" />
+    <Content Include="img\icons\wb\ic_chats.png" />
+    <Content Include="img\icons\wb\ic_cloud.png" />
+    <Content Include="img\icons\wb\ic_delete.png" />
+    <Content Include="img\icons\wb\ic_documents.png" />
+    <Content Include="img\icons\wb\ic_down.png" />
+    <Content Include="img\icons\wb\ic_download.png" />
+    <Content Include="img\icons\wb\ic_down_circle.png" />
+    <Content Include="img\icons\wb\ic_edit.png" />
+    <Content Include="img\icons\wb\ic_empty_document.png" />
+    <Content Include="img\icons\wb\ic_favorite.png" />
+    <Content Include="img\icons\wb\ic_folder.png" />
+    <Content Include="img\icons\wb\ic_fullscreen.png" />
+    <Content Include="img\icons\wb\ic_graph.png" />
+    <Content Include="img\icons\wb\ic_grid.png" />
+    <Content Include="img\icons\wb\ic_left.png" />
+    <Content Include="img\icons\wb\ic_left_circle.png" />
+    <Content Include="img\icons\wb\ic_list.png" />
+    <Content Include="img\icons\wb\ic_lock.png" />
+    <Content Include="img\icons\wb\ic_mail.png" />
+    <Content Include="img\icons\wb\ic_minus.png" />
+    <Content Include="img\icons\wb\ic_ok.png" />
+    <Content Include="img\icons\wb\ic_picture.png" />
+    <Content Include="img\icons\wb\ic_pin.png" />
+    <Content Include="img\icons\wb\ic_plus.png" />
+    <Content Include="img\icons\wb\ic_power.png" />
+    <Content Include="img\icons\wb\ic_print.png" />
+    <Content Include="img\icons\wb\ic_refresh.png" />
+    <Content Include="img\icons\wb\ic_right.png" />
+    <Content Include="img\icons\wb\ic_right_circle.png" />
+    <Content Include="img\icons\wb\ic_settings.png" />
+    <Content Include="img\icons\wb\ic_sound.png" />
+    <Content Include="img\icons\wb\ic_sync.png" />
+    <Content Include="img\icons\wb\ic_tag.png" />
+    <Content Include="img\icons\wb\ic_target.png" />
+    <Content Include="img\icons\wb\ic_text_document.png" />
+    <Content Include="img\icons\wb\ic_time.png" />
+    <Content Include="img\icons\wb\ic_unlock.png" />
+    <Content Include="img\icons\wb\ic_up.png" />
+    <Content Include="img\icons\wb\ic_up_circle.png" />
+    <Content Include="img\icons\wb\ic_user.png" />
+    <Content Include="img\icons\wb\ic_users.png" />
+    <Content Include="img\icons\wb\ic_zoom.png" />
+    <Content Include="img\icons\ws\ic_archive.png" />
+    <Content Include="img\icons\ws\ic_attachment.png" />
+    <Content Include="img\icons\ws\ic_bookmark.png" />
+    <Content Include="img\icons\ws\ic_brush.png" />
+    <Content Include="img\icons\ws\ic_calc.png" />
+    <Content Include="img\icons\ws\ic_calendar.png" />
+    <Content Include="img\icons\ws\ic_cancel.png" />
+    <Content Include="img\icons\ws\ic_chat.png" />
+    <Content Include="img\icons\ws\ic_chats.png" />
+    <Content Include="img\icons\ws\ic_cloud.png" />
+    <Content Include="img\icons\ws\ic_delete.png" />
+    <Content Include="img\icons\ws\ic_documents.png" />
+    <Content Include="img\icons\ws\ic_down.png" />
+    <Content Include="img\icons\ws\ic_download.png" />
+    <Content Include="img\icons\ws\ic_down_circle.png" />
+    <Content Include="img\icons\ws\ic_edit.png" />
+    <Content Include="img\icons\ws\ic_empty_document.png" />
+    <Content Include="img\icons\ws\ic_favorite.png" />
+    <Content Include="img\icons\ws\ic_folder.png" />
+    <Content Include="img\icons\ws\ic_fullscreen.png" />
+    <Content Include="img\icons\ws\ic_graph.png" />
+    <Content Include="img\icons\ws\ic_grid.png" />
+    <Content Include="img\icons\ws\ic_left.png" />
+    <Content Include="img\icons\ws\ic_left_circle.png" />
+    <Content Include="img\icons\ws\ic_list.png" />
+    <Content Include="img\icons\ws\ic_lock.png" />
+    <Content Include="img\icons\ws\ic_mail.png" />
+    <Content Include="img\icons\ws\ic_minus.png" />
+    <Content Include="img\icons\ws\ic_ok.png" />
+    <Content Include="img\icons\ws\ic_picture.png" />
+    <Content Include="img\icons\ws\ic_pin.png" />
+    <Content Include="img\icons\ws\ic_plus.png" />
+    <Content Include="img\icons\ws\ic_power.png" />
+    <Content Include="img\icons\ws\ic_print.png" />
+    <Content Include="img\icons\ws\ic_refresh.png" />
+    <Content Include="img\icons\ws\ic_right.png" />
+    <Content Include="img\icons\ws\ic_right_circle.png" />
+    <Content Include="img\icons\ws\ic_settings.png" />
+    <Content Include="img\icons\ws\ic_sound.png" />
+    <Content Include="img\icons\ws\ic_sync.png" />
+    <Content Include="img\icons\ws\ic_tag.png" />
+    <Content Include="img\icons\ws\ic_target.png" />
+    <Content Include="img\icons\ws\ic_text_document.png" />
+    <Content Include="img\icons\ws\ic_time.png" />
+    <Content Include="img\icons\ws\ic_unlock.png" />
+    <Content Include="img\icons\ws\ic_up.png" />
+    <Content Include="img\icons\ws\ic_up_circle.png" />
+    <Content Include="img\icons\ws\ic_user.png" />
+    <Content Include="img\icons\ws\ic_users.png" />
+    <Content Include="img\icons\ws\ic_zoom.png" />
+    <Content Include="img\loaders\c_loader.gif" />
+    <Content Include="img\loaders\c_loader_bw.gif" />
+    <Content Include="img\loaders\c_loader_ge.gif" />
+    <Content Include="img\loaders\c_loader_gr.gif" />
+    <Content Include="img\loaders\c_loader_re.gif" />
+    <Content Include="img\loaders\c_loader_wh.gif" />
+    <Content Include="img\loaders\c_loader_ye.gif" />
+    <Content Include="img\loaders\loader.gif" />
+    <Content Include="img\loaders\loader_bw.gif" />
+    <Content Include="img\loaders\loader_ge.gif" />
+    <Content Include="img\loaders\loader_gr.gif" />
+    <Content Include="img\loaders\loader_re.gif" />
+    <Content Include="img\loaders\loader_wh.gif" />
+    <Content Include="img\loaders\loader_ye.gif" />
+    <Content Include="img\loaders\s_loader.gif" />
+    <Content Include="img\loaders\s_loader_bw.gif" />
+    <Content Include="img\loaders\s_loader_ge.gif" />
+    <Content Include="img\loaders\s_loader_gr.gif" />
+    <Content Include="img\loaders\s_loader_re.gif" />
+    <Content Include="img\loaders\s_loader_wh.gif" />
+    <Content Include="img\loaders\s_loader_ye.gif" />
+    <Content Include="img\loaders\w_loader.gif" />
+    <Content Include="img\loaders\w_loader_bw.gif" />
+    <Content Include="img\loaders\w_loader_ge.gif" />
+    <Content Include="img\loaders\w_loader_gr.gif" />
+    <Content Include="img\loaders\w_loader_re.gif" />
+    <Content Include="img\loaders\w_loader_wh.gif" />
+    <Content Include="img\loaders\w_loader_ye.gif" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\menu-arrow-down.png" />
+    <Content Include="img\menu-arrow-right.png" />
+    <Content Include="img\menu-arrow-top.png" />
+    <Content Include="img\no-image50.jpg" />
+    <Content Include="img\select2\select2.png" />
+    <Content Include="img\select2\select2x2.png" />
+    <Content Include="img\select2\spinner.gif" />
+    <Content Include="img\styles\dark\arrow-top.png" />
+    <Content Include="img\styles\dark\arrow.png" />
+    <Content Include="img\styles\dark\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\dark\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\dark\backgrounds\header.jpg" />
+    <Content Include="img\styles\dark\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\dark\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\dark\header_menu_list.png" />
+    <Content Include="img\styles\dark\header_menu_settings.png" />
+    <Content Include="img\styles\dark\menu_arrow_down.png" />
+    <Content Include="img\styles\dark\menu_arrow_up.png" />
+    <Content Include="img\styles\default\arrow-top.png" />
+    <Content Include="img\styles\default\arrow.png" />
+    <Content Include="img\styles\default\arrow_down.png" />
+    <Content Include="img\styles\default\arrow_up.png" />
+    <Content Include="img\styles\default\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\default\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\default\backgrounds\header.jpg" />
+    <Content Include="img\styles\default\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\default\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\default\header_menu_list.png" />
+    <Content Include="img\styles\default\header_menu_settings.png" />
+    <Content Include="img\styles\default\menu_arrow_down.png" />
+    <Content Include="img\styles\default\menu_arrow_up.png" />
+    <Content Include="img\styles\green\arrow-top.png" />
+    <Content Include="img\styles\green\arrow.png" />
+    <Content Include="img\styles\green\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\green\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\green\backgrounds\header.jpg" />
+    <Content Include="img\styles\green\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\green\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\green\header_menu_list.png" />
+    <Content Include="img\styles\green\header_menu_settings.png" />
+    <Content Include="img\styles\green\menu_arrow_down.png" />
+    <Content Include="img\styles\green\menu_arrow_up.png" />
+    <Content Include="img\styles\lime\arrow-top.png" />
+    <Content Include="img\styles\lime\arrow.png" />
+    <Content Include="img\styles\lime\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\lime\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\lime\backgrounds\header.jpg" />
+    <Content Include="img\styles\lime\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\lime\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\lime\backgrounds\png.png" />
+    <Content Include="img\styles\lime\header_menu_list.png" />
+    <Content Include="img\styles\lime\header_menu_settings.png" />
+    <Content Include="img\styles\lime\menu_arrow_down.png" />
+    <Content Include="img\styles\lime\menu_arrow_up.png" />
+    <Content Include="img\styles\marble\arrow-top.png" />
+    <Content Include="img\styles\marble\arrow.png" />
+    <Content Include="img\styles\marble\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\marble\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\marble\backgrounds\header.jpg" />
+    <Content Include="img\styles\marble\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\marble\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\marble\header_menu_list.png" />
+    <Content Include="img\styles\marble\header_menu_settings.png" />
+    <Content Include="img\styles\marble\menu_arrow_down.png" />
+    <Content Include="img\styles\marble\menu_arrow_up.png" />
+    <Content Include="img\styles\purple\arrow-top.png" />
+    <Content Include="img\styles\purple\arrow.png" />
+    <Content Include="img\styles\purple\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\purple\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\purple\backgrounds\header.jpg" />
+    <Content Include="img\styles\purple\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\purple\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\purple\header_menu_list.png" />
+    <Content Include="img\styles\purple\header_menu_settings.png" />
+    <Content Include="img\styles\purple\menu_arrow_down.png" />
+    <Content Include="img\styles\purple\menu_arrow_up.png" />
+    <Content Include="img\styles\red\arrow-top.png" />
+    <Content Include="img\styles\red\arrow.png" />
+    <Content Include="img\styles\red\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\red\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\red\backgrounds\header.jpg" />
+    <Content Include="img\styles\red\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\red\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\red\header_menu_list.png" />
+    <Content Include="img\styles\red\header_menu_settings.png" />
+    <Content Include="img\styles\red\menu_arrow_down.png" />
+    <Content Include="img\styles\red\menu_arrow_up.png" />
+    <Content Include="img\styles\silver\arrow-top.png" />
+    <Content Include="img\styles\silver\arrow.png" />
+    <Content Include="img\styles\silver\backgrounds\box-head-active.jpg" />
+    <Content Include="img\styles\silver\backgrounds\box-head.jpg" />
+    <Content Include="img\styles\silver\backgrounds\header.jpg" />
+    <Content Include="img\styles\silver\backgrounds\menu-item-active.jpg" />
+    <Content Include="img\styles\silver\backgrounds\menu-item.jpg" />
+    <Content Include="img\styles\silver\header_menu_list.png" />
+    <Content Include="img\styles\silver\header_menu_settings.png" />
+    <Content Include="img\styles\silver\menu_arrow_down.png" />
+    <Content Include="img\styles\silver\menu_arrow_up.png" />
+    <Content Include="img\switch.png" />
+    <Content Include="img\teamlease_logo1.png" />
+    <Content Include="img\textarea_top_arrow.png" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\ui\close.png" />
+    <Content Include="img\ui\dateArrows.png" />
+    <Content Include="img\ui\handle.png" />
+    <Content Include="img\ui\pageOverlay.png" />
+    <Content Include="img\ui\pboverlay.png" />
+    <Content Include="img\ui\progress.png" />
+    <Content Include="img\ui\slider.png" />
+    <Content Include="img\ui\spinner.png" />
+    <Content Include="img\ui\triangles.png" />
+    <Content Include="img\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="img\ui\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="img\ui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="img\ui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="img\ui\ui-icons_222222_256x240.png" />
+    <Content Include="img\ui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="img\ui\ui-icons_454545_256x240.png" />
+    <Content Include="img\ui\ui-icons_888888_256x240.png" />
+    <Content Include="img\ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="img\users\alexander.jpg" />
+    <Content Include="img\users\alexander_s.jpg" />
+    <Content Include="img\users\alexey.jpg" />
+    <Content Include="img\users\alexey_s.jpg" />
+    <Content Include="img\users\aqvatarius.jpg" />
+    <Content Include="img\users\aqvatarius_s.jpg" />
+    <Content Include="img\users\dmitry.jpg" />
+    <Content Include="img\users\dmitry_s.jpg" />
+    <Content Include="img\users\helen.jpg" />
+    <Content Include="img\users\helen_s.jpg" />
+    <Content Include="img\users\olga.jpg" />
+    <Content Include="img\users\olga_s.jpg" />
+    <Content Include="img\users\user_bg.jpg" />
+    <Content Include="img\users\user_profile.jpg" />
+    <Content Include="js\actions.js" />
+    <Content Include="js\animated.horizontal.submenu.js" />
+    <Content Include="js\charts.js" />
+    <Content Include="js\cookies.js" />
+    <Content Include="js\DateTimePicker.js" />
+    <Content Include="js\dtree.js" />
+    <Content Include="js\faq.js" />
+    <Content Include="js\jquery.datetimepicker.full.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\mail.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\plugins\animatedprogressbar\animated_progressbar.js" />
+    <Content Include="js\plugins\bootstrap.min.js" />
+    <Content Include="js\plugins\charts\chart.min.js" />
+    <Content Include="js\plugins\charts\excanvas.min.js" />
+    <Content Include="js\plugins\charts\jquery.colorhelpers.js" />
+    <Content Include="js\plugins\charts\jquery.flot.crosshair.js" />
+    <Content Include="js\plugins\charts\jquery.flot.fillbetween.js" />
+    <Content Include="js\plugins\charts\jquery.flot.image.js" />
+    <Content Include="js\plugins\charts\jquery.flot.js" />
+    <Content Include="js\plugins\charts\jquery.flot.navigate.js" />
+    <Content Include="js\plugins\charts\jquery.flot.pie.js" />
+    <Content Include="js\plugins\charts\jquery.flot.resize.js" />
+    <Content Include="js\plugins\charts\jquery.flot.selection.js" />
+    <Content Include="js\plugins\charts\jquery.flot.stack.js" />
+    <Content Include="js\plugins\charts\jquery.flot.symbol.js" />
+    <Content Include="js\plugins\charts\jquery.flot.threshold.js" />
+    <Content Include="js\plugins\cleditor\jquery.cleditor.js" />
+    <Content Include="js\plugins\cookie\jquery.cookies.2.2.0.min.js" />
+    <Content Include="js\plugins\dataTables\jquery.dataTables.min.js" />
+    <Content Include="js\plugins\elfinder\elfinder.min.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.ar.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.bg.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.ca.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.cs.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.de.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.es.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.fr.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.hu.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.jp.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.LANG.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.nl.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.no.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.pl.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.pt_BR.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.ru.js" />
+    <Content Include="js\plugins\elfinder\i18n\elfinder.zh_CN.js" />
+    <Content Include="js\plugins\elfinder\proxy\elFinderSupportVer1.js" />
+    <Content Include="js\plugins\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="js\plugins\highlight\jquery.highlight-4.js" />
+    <Content Include="js\plugins\ibutton\jquery.ibutton.min.js" />
+    <Content Include="js\plugins\jquery\jquery-1.10.2.min.js" />
+    <Content Include="js\plugins\jquery\jquery-migrate-1.2.1.min.js" />
+    <Content Include="js\plugins\jquery\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="js\plugins\jquery\jquery.mousewheel.min.js" />
+    <Content Include="js\plugins\maskedinput\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\plugins\mcustomscrollbar\jquery.mCustomScrollbar.min.js" />
+    <Content Include="js\plugins\multiselect\jquery.multi-select.js" />
+    <Content Include="js\plugins\plupload\i18n\cs.js" />
+    <Content Include="js\plugins\plupload\i18n\da.js" />
+    <Content Include="js\plugins\plupload\i18n\de.js" />
+    <Content Include="js\plugins\plupload\i18n\el.js" />
+    <Content Include="js\plugins\plupload\i18n\es.js" />
+    <Content Include="js\plugins\plupload\i18n\et.js" />
+    <Content Include="js\plugins\plupload\i18n\fa.js" />
+    <Content Include="js\plugins\plupload\i18n\fi.js" />
+    <Content Include="js\plugins\plupload\i18n\fr-ca.js" />
+    <Content Include="js\plugins\plupload\i18n\fr.js" />
+    <Content Include="js\plugins\plupload\i18n\hr.js" />
+    <Content Include="js\plugins\plupload\i18n\hu.js" />
+    <Content Include="js\plugins\plupload\i18n\it.js" />
+    <Content Include="js\plugins\plupload\i18n\ja.js" />
+    <Content Include="js\plugins\plupload\i18n\ko.js" />
+    <Content Include="js\plugins\plupload\i18n\lv.js" />
+    <Content Include="js\plugins\plupload\i18n\nl.js" />
+    <Content Include="js\plugins\plupload\i18n\pl.js" />
+    <Content Include="js\plugins\plupload\i18n\pt-br.js" />
+    <Content Include="js\plugins\plupload\i18n\ro.js" />
+    <Content Include="js\plugins\plupload\i18n\ru.js" />
+    <Content Include="js\plugins\plupload\i18n\sr.js" />
+    <Content Include="js\plugins\plupload\i18n\sv.js" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\css\jquery.plupload.queue.css" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\backgrounds.gif" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\buttons-disabled.png" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\buttons.png" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\delete.gif" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\done.gif" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\error.gif" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\throbber.gif" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\img\transp50.png" />
+    <Content Include="js\plugins\plupload\jquery.plupload.queue\jquery.plupload.queue.js" />
+    <Content Include="js\plugins\plupload\jquery.ui.plupload\css\jquery.ui.plupload.css" />
+    <Content Include="js\plugins\plupload\jquery.ui.plupload\img\plupload-bw.png" />
+    <Content Include="js\plugins\plupload\jquery.ui.plupload\img\plupload.png" />
+    <Content Include="js\plugins\plupload\jquery.ui.plupload\jquery.ui.plupload.js" />
+    <Content Include="js\plugins\plupload\plupload.browserplus.js" />
+    <Content Include="js\plugins\plupload\plupload.flash.js" />
+    <Content Include="js\plugins\plupload\plupload.flash.swf" />
+    <Content Include="js\plugins\plupload\plupload.full.js" />
+    <Content Include="js\plugins\plupload\plupload.gears.js" />
+    <Content Include="js\plugins\plupload\plupload.html4.js" />
+    <Content Include="js\plugins\plupload\plupload.html5.js" />
+    <Content Include="js\plugins\plupload\plupload.js" />
+    <Content Include="js\plugins\plupload\plupload.silverlight.js" />
+    <Content Include="js\plugins\plupload\plupload.silverlight.xap" />
+    <Content Include="js\plugins\pnotify\jquery.pnotify.min.js" />
+    <Content Include="js\plugins\qtip\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="js\plugins\scrollup\jquery.scrollUp.min.js" />
+    <Content Include="js\plugins\select2\select2.min.js" />
+    <Content Include="js\plugins\sparklines\jquery.sparkline.min.js" />
+    <Content Include="js\plugins\stepywizard\jquery.stepy.js" />
+    <Content Include="js\plugins\tagsinput\jquery.tagsinput.min.js" />
+    <Content Include="js\plugins\uniform\uniform.js" />
+    <Content Include="js\plugins\validation\jquery.validationEngine.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-cz.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-da.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-de.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-en.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-es.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-et.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-fa.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-fi.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-fr.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-hr.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-hu.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-it.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-ja.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-nl.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-pl.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-pt.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-pt_BR.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-ro.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-ru.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-se.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-tr.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-vi.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-zh_CN.js" />
+    <Content Include="js\plugins\validation\languages\jquery.validationEngine-zh_TW.js" />
+    <Content Include="js\settings.js" />
+    <Content Include="js\ValidateCharecters.js" />
+    <Content Include="js\w2ui-1.4.2.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\Payroll_Outsourcing.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Payroll_Outsourcing.dll" />
+    <Content Include="obj\Debug\Payroll_Outsourcing.pdb" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\Config\Payroll_Client_Configuration.aspx.cs">
+      <DependentUpon>Payroll_Client_Configuration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Client_Configuration.aspx.designer.cs">
+      <DependentUpon>Payroll_Client_Configuration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Components_Group_Mapping.aspx.cs">
+      <DependentUpon>Payroll_Components_Group_Mapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Components_Group_Mapping.aspx.designer.cs">
+      <DependentUpon>Payroll_Components_Group_Mapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Config.master.cs">
+      <DependentUpon>Payroll_Config.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Config.master.designer.cs">
+      <DependentUpon>Payroll_Config.master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Configuration_Dashboard.aspx.cs">
+      <DependentUpon>Payroll_Configuration_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Configuration_Dashboard.aspx.designer.cs">
+      <DependentUpon>Payroll_Configuration_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Salary_Components_Master.aspx.cs">
+      <DependentUpon>Payroll_Salary_Components_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_Salary_Components_Master.aspx.designer.cs">
+      <DependentUpon>Payroll_Salary_Components_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_User_Access_Security.aspx.cs">
+      <DependentUpon>Payroll_User_Access_Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Config\Payroll_User_Access_Security.aspx.designer.cs">
+      <DependentUpon>Payroll_User_Access_Security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dashboard\Payroll_Home.aspx.cs">
+      <DependentUpon>Payroll_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Dashboard\Payroll_Home.aspx.designer.cs">
+      <DependentUpon>Payroll_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dashboard\Payroll_Home_DashBoard.master.cs">
+      <DependentUpon>Payroll_Home_DashBoard.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Dashboard\Payroll_Home_DashBoard.master.designer.cs">
+      <DependentUpon>Payroll_Home_DashBoard.master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee.master.cs">
+      <DependentUpon>Payroll_Employee.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee.master.designer.cs">
+      <DependentUpon>Payroll_Employee.master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee_Dashboard.aspx.cs">
+      <DependentUpon>Payroll_Employee_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee_Dashboard.aspx.designer.cs">
+      <DependentUpon>Payroll_Employee_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee_Details.aspx.cs">
+      <DependentUpon>Payroll_Employee_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Employee\Payroll_Employee_Details.aspx.designer.cs">
+      <DependentUpon>Payroll_Employee_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WebServices\Payroll_Webservices.asmx.cs">
+      <DependentUpon>Payroll_Webservices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Handler\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Payroll_Landing_Page.Master.cs">
+      <DependentUpon>Payroll_Landing_Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payroll_Landing_Page.Master.designer.cs">
+      <DependentUpon>Payroll_Landing_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Payroll_Landing_Page.Master" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\Payroll_Outsourcing.csprojResolveAssemblyReference.cache" />
+    <Content Include="Handler\FileUploadHandler.ashx" />
+    <Content Include="GUI\Config\Payroll_Config.master" />
+    <Content Include="GUI\Employee\Payroll_Employee.master" />
+    <Content Include="GUI\Dashboard\Payroll_Home_DashBoard.master" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\icomoon\icomoon.eot" />
+    <Content Include="css\icomoon\icomoon.ttf" />
+    <Content Include="css\icomoon\icomoon.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{72f4dcde-cdc2-4f28-8bf9-a2fbcf7b9fac}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{019ef743-d11c-423e-9ffd-dd61693d8818}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\UserControls\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50387/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

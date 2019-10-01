@@ -1,0 +1,4 @@
+D:\Projects\Outsource\Entity\bin\Release\Entity.dll
+D:\Projects\Outsource\Entity\bin\Release\Entity.pdb
+D:\Projects\Outsource\Entity\obj\Release\Entity.dll
+D:\Projects\Outsource\Entity\obj\Release\Entity.pdb

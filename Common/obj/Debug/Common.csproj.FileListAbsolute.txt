@@ -1,0 +1,4 @@
+D:\Projects\Outsource\Common\bin\Debug\Common.dll
+D:\Projects\Outsource\Common\bin\Debug\Common.pdb
+D:\Projects\Outsource\Common\obj\Debug\Common.dll
+D:\Projects\Outsource\Common\obj\Debug\Common.pdb

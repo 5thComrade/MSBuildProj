@@ -1,0 +1,13 @@
+D:\Projects\Outsource\Payroll_Outsourcing\bin\Payroll_Outsourcing.dll
+D:\Projects\Outsource\Payroll_Outsourcing\bin\Payroll_Outsourcing.pdb
+D:\Projects\Outsource\Payroll_Outsourcing\bin\BAL.dll
+D:\Projects\Outsource\Payroll_Outsourcing\bin\Entity.dll
+D:\Projects\Outsource\Payroll_Outsourcing\bin\DAL.dll
+D:\Projects\Outsource\Payroll_Outsourcing\bin\DAO.dll
+D:\Projects\Outsource\Payroll_Outsourcing\bin\BAL.pdb
+D:\Projects\Outsource\Payroll_Outsourcing\bin\Entity.pdb
+D:\Projects\Outsource\Payroll_Outsourcing\bin\DAL.pdb
+D:\Projects\Outsource\Payroll_Outsourcing\bin\DAO.pdb
+D:\Projects\Outsource\Payroll_Outsourcing\obj\Release\Payroll_Outsourcing.csprojResolveAssemblyReference.cache
+D:\Projects\Outsource\Payroll_Outsourcing\obj\Release\Payroll_Outsourcing.dll
+D:\Projects\Outsource\Payroll_Outsourcing\obj\Release\Payroll_Outsourcing.pdb

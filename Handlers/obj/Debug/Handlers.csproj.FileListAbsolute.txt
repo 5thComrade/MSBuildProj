@@ -1,0 +1,7 @@
+D:\Projects\Outsource\Handlers\obj\Debug\Handlers.csprojResolveAssemblyReference.cache
+D:\Projects\Outsource\Handlers\bin\Debug\Handlers.dll
+D:\Projects\Outsource\Handlers\bin\Debug\Handlers.pdb
+D:\Projects\Outsource\Handlers\bin\Debug\DAO.dll
+D:\Projects\Outsource\Handlers\bin\Debug\DAO.pdb
+D:\Projects\Outsource\Handlers\obj\Debug\Handlers.dll
+D:\Projects\Outsource\Handlers\obj\Debug\Handlers.pdb

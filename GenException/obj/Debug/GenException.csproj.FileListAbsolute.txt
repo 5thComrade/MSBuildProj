@@ -1,0 +1,4 @@
+D:\Projects\Outsource\GenException\bin\Debug\GenException.dll
+D:\Projects\Outsource\GenException\bin\Debug\GenException.pdb
+D:\Projects\Outsource\GenException\obj\Debug\GenException.dll
+D:\Projects\Outsource\GenException\obj\Debug\GenException.pdb

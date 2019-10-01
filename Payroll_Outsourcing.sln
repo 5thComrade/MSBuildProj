@@ -1,0 +1,187 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication", "Communication\Communication.csproj", "{1CAD39C3-7860-47E6-89C2-9D57F3B233D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Context", "Context\Context.csproj", "{80E60BFD-9753-4CFD-9B88-87D475740180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{70EF4C0A-8774-4BFD-B117-EB8738D0D301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{897A3107-600C-4C2B-9E23-E0948300C51C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileServices", "FileServices\FileServices.csproj", "{08FA15A0-D04C-47FC-B592-E164B625A197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenException", "GenException\GenException.csproj", "{1C300647-F03E-4F5C-99CE-67E9F30D61DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handlers", "Handlers\Handlers.csproj", "{753DC18F-F10B-4958-B2DA-BE09D3DA742F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting", "Reporting\Reporting.csproj", "{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "Security\Security.csproj", "{3EF4D91B-AB22-4DC2-B338-052F9C472C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{F6038093-CA1C-4D40-A7B7-ECC8874B59CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payroll_Outsourcing", "Payroll_Outsourcing\Payroll_Outsourcing.csproj", "{19B6C6E6-259E-4722-AA09-9E42390B9650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payroll.Teamlease", "Payroll.Teamlease", "{5D2F959A-8599-4D28-AD79-E2C756A44828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{019EF743-D11C-423E-9FFD-DD61693D8818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{61CFDF60-205A-4A57-BF01-DC0D852013D7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2012:8080/tfs2012/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAO\\DAO.csproj
+		SccProjectTopLevelParentUniqueName1 = Payroll_Outsourcing.sln
+		SccProjectName1 = DAO
+		SccLocalPath1 = DAO
+		SccProjectUniqueName2 = Communication\\Communication.csproj
+		SccProjectTopLevelParentUniqueName2 = Payroll_Outsourcing.sln
+		SccProjectName2 = Communication
+		SccLocalPath2 = Communication
+		SccProjectUniqueName3 = DAL\\DAL.csproj
+		SccProjectTopLevelParentUniqueName3 = Payroll_Outsourcing.sln
+		SccProjectName3 = DAL
+		SccLocalPath3 = DAL
+		SccProjectUniqueName4 = FileServices\\FileServices.csproj
+		SccProjectTopLevelParentUniqueName4 = Payroll_Outsourcing.sln
+		SccProjectName4 = FileServices
+		SccLocalPath4 = FileServices
+		SccProjectUniqueName5 = GenException\\GenException.csproj
+		SccProjectTopLevelParentUniqueName5 = Payroll_Outsourcing.sln
+		SccProjectName5 = GenException
+		SccLocalPath5 = GenException
+		SccProjectUniqueName6 = Handlers\\Handlers.csproj
+		SccProjectTopLevelParentUniqueName6 = Payroll_Outsourcing.sln
+		SccProjectName6 = Handlers
+		SccLocalPath6 = Handlers
+		SccProjectUniqueName7 = Reporting\\Reporting.csproj
+		SccProjectTopLevelParentUniqueName7 = Payroll_Outsourcing.sln
+		SccProjectName7 = Reporting
+		SccLocalPath7 = Reporting
+		SccProjectUniqueName8 = Security\\Security.csproj
+		SccProjectTopLevelParentUniqueName8 = Payroll_Outsourcing.sln
+		SccProjectName8 = Security
+		SccLocalPath8 = Security
+		SccProjectUniqueName9 = Utilities\\Utilities.csproj
+		SccProjectTopLevelParentUniqueName9 = Payroll_Outsourcing.sln
+		SccProjectName9 = Utilities
+		SccLocalPath9 = Utilities
+		SccProjectUniqueName10 = Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName10 = Payroll_Outsourcing.sln
+		SccProjectName10 = Common
+		SccLocalPath10 = Common
+		SccProjectUniqueName11 = Context\\Context.csproj
+		SccProjectTopLevelParentUniqueName11 = Payroll_Outsourcing.sln
+		SccProjectName11 = Context
+		SccLocalPath11 = Context
+		SccProjectUniqueName12 = Payroll_Outsourcing\\Payroll_Outsourcing.csproj
+		SccProjectName12 = Payroll_Outsourcing
+		SccLocalPath12 = Payroll_Outsourcing
+		SccProjectUniqueName13 = BAL\\BAL.csproj
+		SccProjectTopLevelParentUniqueName13 = Payroll_Outsourcing.sln
+		SccProjectName13 = BAL
+		SccLocalPath13 = BAL
+		SccProjectUniqueName14 = Entity\\Entity.csproj
+		SccProjectTopLevelParentUniqueName14 = Payroll_Outsourcing.sln
+		SccProjectName14 = Entity
+		SccLocalPath14 = Entity
+		SccProjectUniqueName15 = Logging\\Logging.csproj
+		SccProjectTopLevelParentUniqueName15 = Payroll_Outsourcing.sln
+		SccProjectName15 = Logging
+		SccLocalPath15 = Logging
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CAD39C3-7860-47E6-89C2-9D57F3B233D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CAD39C3-7860-47E6-89C2-9D57F3B233D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CAD39C3-7860-47E6-89C2-9D57F3B233D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CAD39C3-7860-47E6-89C2-9D57F3B233D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E60BFD-9753-4CFD-9B88-87D475740180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E60BFD-9753-4CFD-9B88-87D475740180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E60BFD-9753-4CFD-9B88-87D475740180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E60BFD-9753-4CFD-9B88-87D475740180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70EF4C0A-8774-4BFD-B117-EB8738D0D301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EF4C0A-8774-4BFD-B117-EB8738D0D301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EF4C0A-8774-4BFD-B117-EB8738D0D301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EF4C0A-8774-4BFD-B117-EB8738D0D301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897A3107-600C-4C2B-9E23-E0948300C51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897A3107-600C-4C2B-9E23-E0948300C51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897A3107-600C-4C2B-9E23-E0948300C51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897A3107-600C-4C2B-9E23-E0948300C51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FA15A0-D04C-47FC-B592-E164B625A197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FA15A0-D04C-47FC-B592-E164B625A197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FA15A0-D04C-47FC-B592-E164B625A197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FA15A0-D04C-47FC-B592-E164B625A197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C300647-F03E-4F5C-99CE-67E9F30D61DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C300647-F03E-4F5C-99CE-67E9F30D61DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C300647-F03E-4F5C-99CE-67E9F30D61DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C300647-F03E-4F5C-99CE-67E9F30D61DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753DC18F-F10B-4958-B2DA-BE09D3DA742F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753DC18F-F10B-4958-B2DA-BE09D3DA742F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753DC18F-F10B-4958-B2DA-BE09D3DA742F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753DC18F-F10B-4958-B2DA-BE09D3DA742F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF4D91B-AB22-4DC2-B338-052F9C472C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF4D91B-AB22-4DC2-B338-052F9C472C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF4D91B-AB22-4DC2-B338-052F9C472C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF4D91B-AB22-4DC2-B338-052F9C472C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6038093-CA1C-4D40-A7B7-ECC8874B59CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6038093-CA1C-4D40-A7B7-ECC8874B59CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6038093-CA1C-4D40-A7B7-ECC8874B59CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6038093-CA1C-4D40-A7B7-ECC8874B59CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B6C6E6-259E-4722-AA09-9E42390B9650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B6C6E6-259E-4722-AA09-9E42390B9650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B6C6E6-259E-4722-AA09-9E42390B9650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B6C6E6-259E-4722-AA09-9E42390B9650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019EF743-D11C-423E-9FFD-DD61693D8818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019EF743-D11C-423E-9FFD-DD61693D8818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019EF743-D11C-423E-9FFD-DD61693D8818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019EF743-D11C-423E-9FFD-DD61693D8818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CFDF60-205A-4A57-BF01-DC0D852013D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CFDF60-205A-4A57-BF01-DC0D852013D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CFDF60-205A-4A57-BF01-DC0D852013D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CFDF60-205A-4A57-BF01-DC0D852013D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33FDAA0F-5000-4E3E-8CA3-16404CEC79E2} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{1CAD39C3-7860-47E6-89C2-9D57F3B233D0} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{80E60BFD-9753-4CFD-9B88-87D475740180} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{70EF4C0A-8774-4BFD-B117-EB8738D0D301} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{897A3107-600C-4C2B-9E23-E0948300C51C} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{08FA15A0-D04C-47FC-B592-E164B625A197} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{1C300647-F03E-4F5C-99CE-67E9F30D61DF} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{753DC18F-F10B-4958-B2DA-BE09D3DA742F} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{FB0B0B29-127D-45E9-A7F1-87C3DB173B3E} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{3EF4D91B-AB22-4DC2-B338-052F9C472C6B} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{F6038093-CA1C-4D40-A7B7-ECC8874B59CA} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{72F4DCDE-CDC2-4F28-8BF9-A2FBCF7B9FAC} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{019EF743-D11C-423E-9FFD-DD61693D8818} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+		{61CFDF60-205A-4A57-BF01-DC0D852013D7} = {5D2F959A-8599-4D28-AD79-E2C756A44828}
+	EndGlobalSection
+EndGlobal
